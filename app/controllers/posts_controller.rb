@@ -1,5 +1,5 @@
 class PostsController < SecuredController
-  skip_before_action :authorize_request, only: [:index, :show]
+  
   before_action :set_post, only: %i[ show update destroy ]
 
   # GET /posts
